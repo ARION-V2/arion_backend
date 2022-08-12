@@ -61,7 +61,7 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     Route::group(['prefix' => 'checkMapping'], function () {
-        Route::get('all', [SaController::class, 'getAllNih']);
+        Route::get('all', [SaController::class, 'sa_tsp']);
     });
 
 });
