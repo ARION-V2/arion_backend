@@ -12,8 +12,18 @@ class Delivery extends Model
 
     protected $table = 'deliveries';
 
-    protected $guard = [
-      
+    protected $fillable = [
+        'id',
+        'no_resi',
+        'partner_id',
+        'courier_id',
+        'status_recipient',
+        'note',
+        'photo_received',
+        'date_delivery',
+        'date_received',
+        'status',
+        'status_received',
     ];
 
     protected $appends = ['courier','products','partner'];

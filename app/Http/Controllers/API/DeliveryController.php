@@ -49,7 +49,7 @@ class DeliveryController extends Controller
             }
 
             if($isNotDone){
-                $value->where('status','!=','Berhasil');
+                $value->where('status','!=','Berhasil')->where('status', '!=', 'Gagal');
             }
             
 
